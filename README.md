@@ -95,12 +95,15 @@ if (!replyHeights) {
 replyHeights = NSMutableDictionary.dictionary();
 }
 ```
-
+```
 7.第七点: 如果你重写的方法，是之前类不存在的, 是打不上的, 打比方tableView 计算高度的方法你没写, 然后想打JSPatch，返回一定的高度，是打不上的，只能覆盖原有存在方法
-
+```
+```
 8. 获取一个View的frame.size的时候尽量分割多个变量来取，不要一次性全部取完. like>> self.view().frame().size().height ...
-
+```
+```
 9. 使用dispatch_after换成 dispatch_after(0.5, function() {}
+```
 ......
 
 当然还有一些现在也还没有很全的总结出来，也希望能多交流提供，在打补丁的路上互勉
@@ -111,10 +114,11 @@ replyHeights = NSMutableDictionary.dictionary();
 -----------
 
 打JSPatch多，总归是我们程序员本身写代码质量的问题, 不管是从什么角度来说, 都是细节没注意到位, 我就是个写代码很快缺细节总是不到位的一个人, 缺点很明显, 我要努力去要求自己像处女座一样.
-
+```
 1. 一个方法的代码量尽量不超过100行, 尽可能的越清晰越短, 打Patch也不至于那么麻烦
 2. 写代码仔细, 细心, 可以跟同事CodeReview
 3. 1,2 做好了, 3点也就没了
+```
 
 因为很多方法都是纯手打, 英文错了望指点, 写的不到位存在问题的, 也希望各位多多指点一下
 同时非常感谢[bang590](https://github.com/bang590/JSPatch)的衷心付出!
