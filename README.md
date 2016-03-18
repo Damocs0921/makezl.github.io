@@ -104,6 +104,11 @@ replyHeights = NSMutableDictionary.dictionary();
 ```
 9. 使用dispatch_after换成 dispatch_after(0.5, function() {}
 ```
+```
+10. 关于调试Log
+JSPatchconsole.log('Hello iOS');
+Xcode : JSPatch log : Hello iOS
+```
 ......
 
 当然还有一些现在也还没有很全的总结出来，也希望能多交流提供，在打补丁的路上互勉
